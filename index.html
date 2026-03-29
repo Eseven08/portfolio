@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的名字 - 开发者作品集</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: system-ui; }
+    .glass { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+  <div class="max-w-6xl mx-auto p-8">
+    <!-- 顶部导航 -->
+    <nav class="flex justify-between items-center mb-12">
+      <h1 class="text-3xl font-bold">你的名字</h1>
+      <div class="space-x-6">
+        <a href="#" class="hover:text-blue-400">首页</a>
+        <a href="#" class="hover:text-blue-400">项目</a>
+        <a href="#" class="hover:text-blue-400">技能</a>
+      </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <div class="text-center py-20">
+      <h2 class="text-6xl font-bold mb-4">Hi，我是 <span class="text-blue-400">你的名字</span></h2>
+      <p class="text-2xl text-gray-400">全栈开发者 | AI 爱好者 | GitHub 活跃玩家</p>
+      <button onclick="alert('欢迎来到我的作品集！')" 
+              class="mt-8 px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-110 transition">
+        查看我的项目 →
+      </button>
+    </div>
+
+    <!-- 项目展示 -->
+    <h3 class="text-3xl font-bold mb-8">🚀 我的项目</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass p-6 rounded-3xl border border-white/10">
+        <h4 class="text-xl font-bold">Netflix Clone</h4>
+        <p class="text-gray-400 mt-2">高级电影流媒体网站</p>
+        <span class="text-xs bg-blue-500 px-3 py-1 rounded-full mt-4 inline-block">Next.js</span>
+      </div>
+      <!-- 你以后可以继续加卡片 -->
+    </div>
+
+    <p class="text-center text-gray-500 mt-16">这个作品集是用纯 HTML + Tailwind 做的，超级简单！</p>
+  </div>
+</body>
+</html>
